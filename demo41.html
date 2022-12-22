@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outer
+        {
+            background: silver;
+            min-height: 200px;
+            width: 200px;
+            margin: 20px auto;
+            padding: 30px 10px;
+            border: 5px groove gold;
+            border-radius: 5px;
+        }
+        b{
+            color: whitesmoke;
+            text-shadow: 0px 0px 5px black;
+        }
+        #inner
+        {
+            margin-bottom: 30px;
+        }
+        #msg
+        {
+            height: 25px;
+            line-height: 25px;
+            background: rgb(73, 73, 73);
+            color: white;
+            border: 5px double gold;
+            box-shadow: 0px 0px 5px -1px rgb(0, 0, 0);
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        .btn
+        {
+            margin: 3px;
+            height: 40px;
+            width: 40px;
+            border:none;
+            box-shadow: 0px 0px 5px -2px rgb(74, 74, 74);
+            border-radius: 8px;
+        }
+        video{
+            display: none;
+        }
+        .defa
+        {
+            box-shadow: 0px 0px 5px -2px rgb(74, 74, 74) inset;
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <center>
+        <div id="inner">
+            <b>Score : </b><b id="s">0 / 0</b><br/>
+            <div id="msg">Congratulations</div><br/>
+            <b>Generated Number: </b><b id="gen"></b>
+        </div>
+        <div>
+            <input type="button" onclick="demo(this)" class="btn" value="1">
+            <input type="button" onclick="demo(this)" class="btn" value="2">
+            <input type="button" onclick="demo(this)" class="btn" value="3">
+            <input type="button" onclick="demo(this)" class="btn" value="4">
+        </div>
+    </center>
+    </div>
+    <video id="win" src="1.mp4"></video>
+    <video id="lose" src="2.mp4"></video>
+    <script>
+        var all=document.getElementsByClassName(".btn")
+        for(var i=0; i<d ;i++)
+        {
+            alert(all)
+        }
+        var total=0
+        var score=0
+        let demo=(x)=>
+        {
+            var rno=Math.floor(Math.random()*4)+1
+            var inp=x.value
+            var msg=document.querySelector("#msg")
+            var s=document.querySelector("#s")
+            document.querySelector("#gen").innerText=rno
+            var win=document.querySelector("#win")
+            var lose=document.querySelector("#lose")
+            total+=1
+            
+            win.currentTime=0
+            lose.currentTime=0
+            if(inp==rno)
+            {
+                msg.innerText="Congratulations"
+                score+=1
+                win.play()
+                lose.pause()
+            }
+            else
+            {
+                msg.innerText="Sorry ! You Lose.."
+                lose.play()
+                win.pause()
+            }
+            s.innerText=`${score} / ${total}`
+        }
+    </script>
+</body>
+</html>

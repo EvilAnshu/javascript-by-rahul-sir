@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select onchange="demo(this)">
+        <option> --Select Course-- </option>
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JAVASCRIPT</option>
+        <option>C#</option>
+    </select>
+    <input type="text" disabled id="fee">
+    <script>
+        let demo=(x)=>
+        {
+            var v=document.querySelector("#fee");
+            if(x.value=="HTML")
+            v.value=400;
+            else if(x.value=="CSS")
+            v.value=600;
+            else if(x.value=="JAVASCRIPT")
+            v.value=1000;
+            else if(x.value=="C#")
+            v.value=500;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+    <form>
+        <input type="text" id="txt"/>
+        <input type="text" id="txt1"/>
+        <input type="button" onclick="demo()" value="Set Value"/>
+    </form>
+    <script>
+        let demo=()=>
+        {
+            var x=document.getElementById("txt");
+            var y=document.getElementById("txt1");
+            y.value=x.value;
+        }
+    </script>
+</body>
+</html>

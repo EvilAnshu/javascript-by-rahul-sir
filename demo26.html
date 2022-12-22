@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img
+        {
+            height: 200px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 5px 1px black;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <img src="1.jpg" id="a">
+    <img src="2.jpg" id="b">
+    <img src="3.jpg" id="c">
+    <img src="4.jpg" id="d">
+</center>
+    <script>
+        setInterval(()=>{
+            var a=document.querySelector("#a");
+            var b=document.querySelector("#b");
+            var c=document.querySelector("#c");
+            var d=document.querySelector("#d");
+            var e=a.src;
+            a.src=b.src;
+            b.src=c.src;
+            c.src=d.src;
+            d.src=e;
+        },1500)
+    </script>
+</body>
+</html>

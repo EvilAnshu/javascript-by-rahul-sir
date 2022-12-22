@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="contry"></div>
+    <br/>
+    <div id="state"></div>
+    <script>
+        // First Dropdown
+        let contry=document.querySelector("#contry");
+        let state=document.querySelector("#state");
+        let con={
+            "Uttar Pradesh":["Lakhimpur","Gola","Lucknow"],
+            "Bihar":["Ara","Chapra","Gaya"],
+            "Andhra Pradesh":["Lakhimpur","Gola","Lucknow"],
+            "Arunachal Pradesh":["Lakhimpur","Gola","Lucknow"],
+            "Uttarakhand":["Dehradun","Rishikesh","Haridwar"]
+        };
+            //console.log(Object.keys(con));
+        let conres="<select onChange={st(this)}><option>--Select--</option>";
+            Object.keys(con).forEach((data)=>{
+            conres +="<option>"+data+"</option>";
+        })
+        conres +="</select><br/>";
+        contry.innerHTML=conres;
+
+        /////////////////////////////////////
+
+        // Second Dropdown
+
+        let st=(x)=>
+        {
+            // console.log(con[x.value]);
+            let stres="<select><option>--Select--</option>";
+                if(!con[x.value]){
+                    stres="";  
+                }
+                else{
+                con[x.value].forEach((city)=>{
+                    stres +="<option>"+city+"</option>";
+                    })
+                    stres +="</select>";
+                }
+            state.innerHTML=stres;
+        }
+
+        //////////////////////////////////////
+
+        // let st=(x)=>
+        // {
+        //     //console.log(x.value);
+        //     //console.log(con[x.value]);
+        //     let stres="<select><option>--Select--</option>";
+        //         Object.keys(con).forEach((data,index)=>{
+        //             if(data==x.value)
+        //             {
+        //                 //console.log(Object.values(con)[index]);
+        //                 Object.values(con)[index].forEach((city)=>{
+        //                     stres +="<option>"+city+"</option>";
+        //                 })
+        //             }
+        //         })
+        //         stres +="</select>";
+        //         state.innerHTML=stres;
+        // }
+
+        ////////////////////////////////////
+
+    </script>
+</body>
+</html>

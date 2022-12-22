@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img1
+        {
+            height: 200px;
+            width: 300px;
+            border:10px groove aqua;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px 2px black inset;
+            margin: 10px;
+        }
+        #modal
+        {
+            width: 100%;
+            min-height: 100vh;
+            background: rgba(0,0,0,0.6);
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            display: none;
+        }
+        #minner
+        {
+            min-height: 300px;
+            width: 600px;
+            border-radius: 10px;
+            padding: 25px;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 15px 2px white;
+            background: white;
+            margin-top: 100px;
+        }
+        #imgMain
+        {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1>Image Gallery</h1>
+    <img src="1.jpg" class="img1" onclick="demo(this)">
+    <img src="3.jpg" class="img1" onclick="demo(this)">
+    <img src="2.jpg" class="img1" onclick="demo(this)"><br/>
+    <img src="3.jpg" class="img1" onclick="demo(this)">
+    <img src="1.jpg" class="img1" onclick="demo(this)">
+    <img src="4.jpg" class="img1" onclick="demo(this)"><br/>
+    <!-- start Modal -->
+    <div id="modal">
+        <div id="minner">
+            <div style="text-align: center;font: size 30px;">IMAGE <B style="color: red;">GALLERY</B>
+            <a href="demo23.html">
+                <b style="transform:translateY(-12px);color: red;font-size:30px;float: right;">X</b>
+            </a>
+            </div><hr/>
+            <img src="image.jpg" id="imgMain"/>
+        </div>
+    </div>
+    <!-- end Modal -->
+    </center>
+    <script>
+        let demo=(a)=>
+        {
+            var modal=document.querySelector("#modal");
+            modal.style.display="block";
+            document.querySelector("#imgMain").src=a.src;
+        }
+    </script>
+</body>
+</html>

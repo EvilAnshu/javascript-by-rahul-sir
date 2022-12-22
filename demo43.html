@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // const str="abc.ahgs.jpg"
+        // document.write(str.slice(str.lastIndexOf(".")+1,))
+
+
+        var b=document.querySelector("b")
+        var fullpath=x.value;//sdd.abb.jpg
+        var ext=fullpath.slice(fullpath.lastIndexOf('.')+1).toUpperCase()
+        if(ext=="JPG" || ext=="JPEG" || ext=="PNG"){
+            b.innerText="Valid Image"
+            b.style.color="green"
+            btn.removeAttribute('disabled');
+            x.style.border="5px solid green";
+        }
+        else
+        {
+            b.innerText="Invalid Image"
+            b.style.color="red"
+            btn.setAttribute("disabled","disabled");
+            x.style.border="5px solid red"
+        }
+        
+    </script>
+</body>
+</html>

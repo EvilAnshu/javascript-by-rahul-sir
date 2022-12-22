@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #outer
+    {
+        height: 400px;
+        width:600px;
+        border:15px groove aqua;
+        background-image: url("1.jpg");
+        background-size: 100% 100%;
+    }
+    #inner
+    {
+        height: 400px;
+        width:600px;
+        line-height: 400px;
+        font-size: 60px;
+        background-color: rgba(0,0,0,.5);
+        color: aqua;
+    }
+    </style>
+</head>
+<body>
+    <center>
+    <h1>Slider</h1>
+    <hr>
+    <div id="outer">
+        <div id="inner">Message</div>
+    </div>
+</center>
+<script>
+    var bg=["1.jpg","2.jpg","3.jpg","4.jpg"];
+    var rg=["255,231,121,0.5"];
+    let demo=()=>
+    {
+        var img=document.querySelector("#outer");
+        var rgb=document.querySelector("#inner");
+        
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .stl
+        {
+            height: 200px;
+            background-color:pink;
+            text-align: center;
+            line-height: 200px;
+            width: 400px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px black;
+            margin: 40px 20px;
+            font-size: 30px;
+            color: white;
+            font-family: Impact;
+            text-shadow: 1px 1px 2px black;
+        }
+        #login,#register
+        {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="login()">Login</button>
+    <button onclick="register()">Register</button>
+    <button onclick="hide()">Hide Both</button>
+    <button onclick="show()">Show Both</button>
+    <form id="login">
+        <div class="stl">Login</div>
+    </form>
+    <form id="register">
+        <div class="stl">Register</div>
+    </form>
+    <script>
+        function login()
+        {
+        var login=document.getElementById("login");
+        var reg=document.getElementById("register")
+        login.style.display="block";
+        reg.style.display="none";
+        }
+        function register()
+        {
+        var login=document.getElementById("login");
+        var reg=document.getElementById("register")
+        login.style.display="none";
+        reg.style.display="block";
+        }
+        function hide()
+        {
+        var login=document.getElementById("login");
+        var reg=document.getElementById("register")
+        login.style.display="none";
+        reg.style.display="none";
+        }
+        function show()
+        {
+        var login=document.getElementById("login");
+        var reg=document.getElementById("register")
+        login.style.display="block";
+        reg.style.display="block";
+        }
+    </script>
+</body>
+</html>

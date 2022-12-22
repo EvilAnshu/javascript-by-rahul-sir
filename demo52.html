@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr=["RAHUL","RAM","MOHAN","SHYAM","RAJ","ANTU"]
+
+        // Using Filter Function
+
+        // arr1=arr.filter((data)=>{
+        //     return(data.length%3==0 && data.charAt(0)=="R")
+        // })
+        // console.log(arr1)
+
+        /////////////////////////////////////
+        // Using push
+
+        // var arr1=[]
+        // arr.forEach((data)=>{
+        //     if(data.length%3==0 && data.charAt(0)=="R")
+        //     {
+        //         arr1.push(data);
+        //     }
+        // })
+        // console.log(arr1)
+
+        ////////////////////////////////////
+
+        var arr1=[]
+        arr.forEach((data)=>{
+                arr1.push(data[0].toUpperCase()+data.slice(1).toLowerCase())
+        })
+        console.log(arr1)
+        document.write(arr1)
+    </script>
+</body>
+</html>

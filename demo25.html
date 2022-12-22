@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="a"><br/>
+    <input type="number" id="b">
+    <p></p>
+    <input type="button" onclick="demo(this)" value="+">
+    <input type="button" onclick="demo(this)" value="-">
+    <input type="button" onclick="demo(this)" value="*">
+    <input type="button" onclick="demo(this)" value="/">
+    <script>
+        let demo=(x)=>
+        {
+            let para=document.querySelector("p");
+            let a=Number(document.querySelector("#a").value);
+            let b=Number(document.querySelector("#b").value);
+            if(x.value=="+")
+            para.innerText=`Sum is : ${a+b}`;
+            else if(x.value=="-")
+            para.innerText=`Subtraction is : ${a-b}`;
+            else if(x.value=="*")
+            para.innerText=`Multiplication is : ${a*b}`;
+            else if(x.value=="/")
+            para.innerText=`Divide is : ${a/b}`;
+        }
+    </script>
+</body>
+</html>

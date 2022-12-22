@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #outer
+            {
+                min-height: 600px;
+                width:800px;
+                margin: 100px auto;
+            }
+            .heading
+            {
+                width:100%;
+                font-size: 36px;
+                margin-bottom: 20px;
+                box-shadow: 0px 0px 10px -5px black;
+                padding: 10px 0px;
+                border-radius:30px ;
+                border: none;
+                background: white;
+            }
+            .box
+            {
+                width:60%;
+                margin-bottom: 50px;
+            }
+            .detail
+            {
+                display: none;
+            }
+            @keyframes det
+            {
+                0%{
+                    opacity: 0;
+                }
+                100%{
+                    
+                    opacity: 1;
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div align="center" id="outer">
+            <div class="box">
+            <input type="button" onclick="demo(this)" id="s" class="heading" value="Summer Training"/>
+            <div class="detail" id="sd">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora a deleniti laboriosam earum temporibus consequatur quos, id rerum eligendi eius magnam, at cumque vitae similique in consectetur et, porro magni impedit nemo laborum perferendis! Deleniti est quisquam dolores labore! Aliquid quaerat itaque odio harum dolorum dignissimos, praesentium provident libero, fugit nisi corrupti delectus omnis quam! In aspernatur qui magni debitis facere minima corrupti voluptatem beatae autem, accusantium corporis eaque quis tenetur explicabo vel dignissimos totam. Excepturi minus pariatur est, praesentium tenetur numquam nobis ducimus illum! Labore voluptates ab quasi molestiae, sequi esse cum quaerat fugit, perspiciatis expedita, provident voluptas nulla!</div>
+            </div>
+            <div class="box">
+            <input type="button" onclick="demo(this)" id="w" class="heading" value="Winter Training"/>
+            <div class="detail" id="wd">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora a deleniti laboriosam earum temporibus consequatur quos, id rerum eligendi eius magnam, at cumque vitae similique in consectetur et, porro magni impedit nemo laborum perferendis! Deleniti est quisquam dolores labore! Aliquid quaerat itaque odio harum dolorum dignissimos, praesentium provident libero, fugit nisi corrupti delectus omnis quam! In aspernatur qui magni debitis facere minima corrupti voluptatem beatae autem, accusantium corporis eaque quis tenetur explicabo vel dignissimos totam. Excepturi minus pariatur est, praesentium tenetur numquam nobis ducimus illum! Labore voluptates ab quasi molestiae, sequi esse cum quaerat fugit, perspiciatis expedita, provident voluptas nulla!</div>
+            </div>
+            <div class="box">
+            <input type="button" onclick="demo(this)" id="a" class="heading" value="Apprenticeship"/>
+            <div class="detail" id="ad">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora a deleniti laboriosam earum temporibus consequatur quos, id rerum eligendi eius magnam, at cumque vitae similique in consectetur et, porro magni impedit nemo laborum perferendis! Deleniti est quisquam dolores labore! Aliquid quaerat itaque odio harum dolorum dignissimos, praesentium provident libero, fugit nisi corrupti delectus omnis quam! In aspernatur qui magni debitis facere minima corrupti voluptatem beatae autem, accusantium corporis eaque quis tenetur explicabo vel dignissimos totam. Excepturi minus pariatur est, praesentium tenetur numquam nobis ducimus illum! Labore voluptates ab quasi molestiae, sequi esse cum quaerat fugit, perspiciatis expedita, provident voluptas nulla!</div>
+            </div>
+            <div class="box">
+            <input type="button" onclick="demo(this)" id="v" class="heading" value="Vocational Training"/>
+            <div class="detail" id="vd">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora a deleniti laboriosam earum temporibus consequatur quos, id rerum eligendi eius magnam, at cumque vitae similique in consectetur et, porro magni impedit nemo laborum perferendis! Deleniti est quisquam dolores labore! Aliquid quaerat itaque odio harum dolorum dignissimos, praesentium provident libero, fugit nisi corrupti delectus omnis quam! In aspernatur qui magni debitis facere minima corrupti voluptatem beatae autem, accusantium corporis eaque quis tenetur explicabo vel dignissimos totam. Excepturi minus pariatur est, praesentium tenetur numquam nobis ducimus illum! Labore voluptates ab quasi molestiae, sequi esse cum quaerat fugit, perspiciatis expedita, provident voluptas nulla!</div>
+            </div>
+            </div>
+            <script>
+                var sd=document.querySelector("#sd");
+                var wd=document.querySelector("#wd");
+                var ad=document.querySelector("#ad");
+                var vd=document.querySelector("#vd");
+                let demo=(x)=>
+                {
+                    if(x.id=="s")
+                    {
+                        sd.style.display="block";
+                        wd.style.display="none";
+                        ad.style.display="none";
+                        vd.style.display="none";
+                        sd.style.animation="det 2s";
+                    }
+                    else if(x.id=="w")
+                    {
+                        wd.style.display="block";
+                        sd.style.display="none";
+                        ad.style.display="none";
+                        vd.style.display="none";
+                        wd.style.animation="det 2s";
+                    }
+                    else if(x.id=="a")
+                    {
+                        ad.style.display="block";
+                        sd.style.display="none";
+                        wd.style.display="none";
+                        vd.style.display="none";
+                        ad.style.animation="det 2s";
+                    }
+                    else if(x.id=="v")
+                    {
+                        vd.style.display="block";
+                        sd.style.display="none";
+                        wd.style.display="none";
+                        ad.style.display="none";
+                        vd.style.animation="det 2s";
+                    }
+                }
+            </script>
+    </body>
+</html>

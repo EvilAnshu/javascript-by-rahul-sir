@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select>
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JS</option>
+    </select>
+
+    <p>Anshu Verma</p>
+    <script>
+        // var dr=document.querySelector("select")
+        // dr.addEventListener("change",function(){
+        //     document.querySelector("p").innerText=this.value
+        // })
+
+
+        // window.addEventListener("contextmenu",function(){
+        //     event.preventDefault();
+        // })
+
+
+        // window.addEventListener("copy",function(){
+        //     event.preventDefault()
+        //     alert("Don't Copy My Content")
+        // })
+
+
+        // window.addEventListener("cut",function(){
+        //     event.preventDefault()
+        //     alert("Don't Cut My Content")
+        // })
+
+        // window.addEventListener("cut",function(){
+        //     event.preventDefault()
+        //     alert("Don't Cut My Content")
+        // })
+
+        function demo()
+        {
+            alert("Cut , Copy , Paste Disablled here...")
+            event.preventDefault()
+        }
+
+        window.addEventListener("cut",demo)
+        window.addEventListener("copy",demo)
+        window.addEventListener("paste",demo)
+        window.addEventListener("contextmenu",demo)
+
+    </script>
+</body>
+</html>

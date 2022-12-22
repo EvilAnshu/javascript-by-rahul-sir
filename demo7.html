@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="n" style="margin: 20px auto;width:400px;">Welcome to The World of Javascript</div>
+    <button onclick="demo()" ondblclick="demo1()">Set Style</button>
+    <button onclick="demo1()">Reset Style</button>
+    <script>
+        function demo()
+        {
+        var n=document.getElementById("n");
+        n.style.color="hotpink";
+        n.style.textAlign="center";
+        n.style.border="5px double pink";
+        n.style.textShadow="1px 1px 2px black";
+        n.style.borderRadius="15px";
+        n.style.boxShadow="0px 0px 10px 0px black";
+        n.style.transform="rotate(360deg)";
+        n.style.transition="2s"
+        }
+        function demo1()
+        {
+        var n=document.getElementById("n");
+        n.style.color="black";
+        n.style.textAlign="left";
+        n.style.border="none";
+        n.style.textShadow="none";
+        n.style.borderRadius="0px";
+        n.style.boxShadow="none"
+        n.style.transform="rotate(0deg)";
+        n.style.transition="2s"
+        }
+    </script>
+</body>
+</html>

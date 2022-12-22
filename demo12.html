@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box
+        {
+            width: 350px;
+            background: linear-gradient(45deg, blue, skyblue);
+            padding: 15px;
+            min-height: 200px;
+            box-sizing: border-box;
+            margin: 100px auto;
+        }
+        #header
+        {
+            height: 45px;
+            width: 320px;
+            color: white;
+            text-align: center;
+            line-height: 45px;
+        }
+        #left
+        {
+            width: 160px;
+            height: 45px;
+            float: left;
+        }
+        #right
+        {
+            width: 160px;
+            height: 45px;
+            float: left;
+        }
+        .txt
+        {
+            height: 40px;
+            width: 100%;
+            border:none;
+            border-radius: 5px;
+            padding-left: 10px;
+        }
+        .btn
+        {
+            height: 40px;
+            width: 100%;
+            border:none;
+            border-radius: 5px;
+            padding-left: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="header">
+            <div id="left" onclick="demo()">LOGIN</div>
+            <div id="right" onclick="demo1()">RGISTER</div>
+        </div>
+            <p id="reg">
+                Name <br/>
+                <input type="text" placeholder="Name.." class="txt"/><br/>
+                Mobile <br/>
+                <input type="text" placeholder="Mobile.." class="txt"/><br/>
+                Email <br/>
+                <input type="email" placeholder="Email.." class="txt"/><br/>
+                <br/><input type="button" value="Login" class="btn">
+            </p>
+
+            <p id="login">
+                Name<br/>
+                <input type="text" placeholder="Name.." class="txt"/><br/>
+                Mobile <br/>
+                <input type="text" placeholder="Mobile.." class="txt"/><br/>
+                Email <br/>
+                <input type="email" placeholder="Email.." class="txt"/><br/>
+                <br/><input type="button" value="Login" class="btn">
+            </p>
+            <p id="fpass">
+                Enter your Registered Mobile <br/>
+                <input type="text" placeholder="Name.." class="txt"/><br/>
+                Mobile <br/>
+                <input type="text" placeholder="Mobile.." class="txt"/><br/>
+                Email <br/>
+                <input type="email" placeholder="Email.." class="txt"/><br/>
+                <br/><input type="button" value="Login" class="btn">
+            </p>
+    </div>
+    <script>
+        var login= document.getElementById("login");
+        var reg=document.getElementById("reg");
+        function demo()
+        {
+            login.style.display="block";
+            fpass.style.display="none";
+            reg.style.display="none";
+        }
+        function demo1()
+        {
+            login.style.display="none";
+            fpass.style.display="none";
+            reg.style.display="block";
+        }
+        function demo2()
+        {
+            login.style.display="none";
+            fpass.style.display="block";
+            reg.style.display="none";
+        }
+    </script>
+</body>
+</html>

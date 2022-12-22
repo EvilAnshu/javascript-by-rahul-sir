@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="contry"></div>
+    <div id="state"></div>
+    <script>
+        let contry=document.querySelector("#contry");
+        let state=document.querySelector("#state");
+        let con=["Uttar Pradesh","Bihar","Andhra Pradesh","Arunachal Pradesh"];
+        let conres="<select onChange={st(this)}><option>--Select--</option>";
+        con.forEach((data)=>{
+            conres +="<option>"+data+"</option>";
+        })
+        conres +="</select>";
+        contry.innerHTML=conres;
+        let st=(x)=>
+        {
+            let up=["Uttar Pradesh","Bihar","Andhra Pradesh","Arunachal Pradesh"];
+            let Bihar=["Bihar","Andhra Pradesh","Arunachal Pradesh"];
+            // console.log(x.value);
+            let stres="<select onChange={st(this)}><option>--Select--</option>";
+                if(x.value=="Uttar Pradesh")
+                {
+                    up.forEach((data)=>{
+                    stres +="<option>"+data+"</option>";
+                    })
+                }
+                if(x.value=="Bihar")
+                {
+                    Bihar.forEach((data)=>{
+                    stres +="<option>"+data+"</option>";
+                    })
+                }
+            stres +="</select>";
+            state.innerHTML=stres;
+        }
+
+    </script>
+</body>
+</html>

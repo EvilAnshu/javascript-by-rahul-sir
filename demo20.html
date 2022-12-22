@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="demo()">CLICK ME</button>
+    <p></p>
+    <script>
+        let demo=()=>
+        {
+        var arr=["HTML", "CSS", "BOOTSTRAP", "DATABASE","C LANGUAGE", "JS"];
+        var col=["red", "lightgreen", "navy", "aqua", "hotpink", "orange"];
+        var res="<ul>";
+        for (var x in arr)
+        {
+            //res +="<li style='color:"+col[x]+"'>"+arr[x]+"</li>";
+            res +=`<li style='color:${col[x]}'>${arr[x]}</li>`;
+        }
+        res += "</ul>";
+        var para=document.querySelector("p");
+        para.innerHTML=res;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input
+        {
+            margin: 10px 20px;
+            height: 15px;
+            width: 200px;
+            border-radius: 20px;
+            border:none;
+            padding: 10px;
+            text-align: center;
+        }
+        form
+        {
+            margin: 10px auto;
+            padding: 40px;
+            width:400px;
+            line-height: 25px;
+            background: navy;
+            border-radius: 20px;
+            color: aliceblue;
+            text-shadow: 1px 1px 3px black;
+            border:8px double rgb(180, 178, 178);
+            box-shadow: 0px 0px 20px black;
+            text-align: center;
+        }
+        #form2
+        {
+            margin: 10px auto;
+            padding: 40px;
+            width:400px;
+            line-height: 25px;
+            background: hotpink;
+            border-radius: 20px;
+            color: aliceblue;
+            text-shadow: 1px 1px 3px black;
+            border:8px double rgb(180, 178, 178);
+            box-shadow: 0px 0px 20px black;
+            display: none;
+        }
+        #form2 input
+        {
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1">
+        <label for="txt1">Box1</label>
+        <input type="text" id="txt1"><br/>
+        <label for="txt2">Box2</label>
+        <input type="text" id="txt2"><br/>
+        <label for="txt3">Box3</label>
+        <input type="text" id="txt3"><br/>
+        <label for="txt4">Box4</label>
+        <input type="text" id="txt4"><br/>
+        <label for="txt5">Box5</label>
+        <input type="text" id="txt5"><br/>
+        <label for="txt6">Box6</label>
+        <input type="text" id="txt6"><br/>
+        <label for="txt7">Box7</label>
+        <input type="text" id="txt7"><br/>
+        <label for="txt8">Box8</label>
+        <input type="text" id="txt8"><br/>
+        <label for="txt9">Box9</label>
+        <input type="text" id="txt9"><br/>
+        <label for="txt10">Box10</label>
+        <input type="text" id="txt10"><br/>
+        <label for="txt11">Box11</label>
+        <input type="text" id="txt11"><br/>
+        <label for="txt12">Box12</label>
+        <input type="text" id="txt12"><br/>
+        <label for="txt13">Box13</label>
+        <input type="text" id="txt13"><br/>
+        <label for="txt14">Box14</label>
+        <input type="text" id="txt14"><br/>
+        <label for="txt15">Box15</label>
+        <input type="text" id="txt15"><br/>
+        <label for="txt16">Box16</label>
+        <input type="text" id="txt16"><br/>
+        <label for="txt17">Box17</label>
+        <input type="text" id="txt17"><br/>
+        <label for="txt18">Box18</label>
+        <input type="text" id="txt18"><br/>
+        <label for="txt19">Box19</label>
+        <input type="text" id="txt19"><br/>
+        <label for="txt20">Box20</label>
+        <input type="text" id="txt20"><br/>
+        <label for="txt21">Box21</label>
+        <input type="text" id="txt21"><br/>
+        <label for="txt22">Box22</label>
+        <input type="text" id="txt22"><br/>
+        <label for="txt23">Box23</label>
+        <input type="text" id="txt23"><br/>
+        <label for="txt24">Box24</label>
+        <input type="text" id="txt24"><br/>
+        <label for="txt25">Box25</label>
+        <input type="text" id="txt25"><br/>
+        <label for="txt26">Box26</label>
+        <input type="text" id="txt26"><br/>
+        <label for="txt27">Box27</label>
+        <input type="text" id="txt27"><br/>
+        <label for="txt28">Box28</label>
+        <input type="text" id="txt28"><br/>
+        <label for="txt29">Box29</label>
+        <input type="text" id="txt29"><br/>
+        <label for="txt30">Box30</label>
+        <input type="text" id="txt30"><br/>
+        <input type="button" onclick="demo()" style="background-color: green;color:white;border:1px solid lightcyan;height: 40px;;" value="Click Me"/>
+    </form>
+    <form id="form2">
+        <center style="font-size: 25px;margin-bottom: 10px;text-shadow: 2px 2px 2px black;">Retrived data</center>
+        Box1 : <input readonly id="s1"> <br/>
+        Box2 : <input id="s2"> <br/>
+        Box3 : <input id="s3"> <br/>
+        Box4 : <input id="s4"> <br/>
+        Box5 : <input id="s5"> <br/>
+        Box6 : <input id="s6"> <br/>
+        Box7 : <input id="s7"> <br/>
+        Box8 : <input id="s8"> <br/>
+        Box9 : <input id="s9"> <br/>
+        Box10 : <input id="s10"> <br/>
+        Box11 : <input id="s11"> <br/>
+        Box12 : <input id="s12"><br/>
+        Box13 : <input id="s13"><br/>
+        Box14 : <input id="s14"><br/>
+        Box15 : <input id="s15"><br/>
+        Box16 : <input id="s16"> <br/>
+        Box17 : <input id="s17"> <br/>
+        Box18 : <input id="s18"> <br/>
+        Box19 : <input id="s19"> <br/>
+        Box20 : <input id="s20"> <br/>
+        Box21 : <input id="s21"> <br/>
+        Box22 : <input id="s22"><br/>
+        Box23 : <input id="s23"> <br/>
+        Box24 : <input id="s24"> <br/>
+        Box25 : <input id="s25"><br/>
+        Box26 : <input id="s26"> <br/>
+        Box27 : <input id="s27"><br/>
+        Box28 : <input id="s28"><br/>
+        Box29 : <input id="s29"><br/>
+        Box30 : <input id="s30"><br/>
+    </form>
+    <script>
+        let demo=()=>
+        {
+            document.getElementById("form1").style.display="none";
+            document.getElementById("form2").style.display="block";
+            var txt1=document.getElementById("txt1").value;
+            var txt2=document.getElementById("txt2").value;
+            var txt3=document.getElementById("txt3").value;
+            var txt4=document.getElementById("txt4").value;
+            var txt5=document.getElementById("txt5").value;
+            var txt6=document.getElementById("txt6").value;
+            var txt7=document.getElementById("txt7").value;
+            var txt8=document.getElementById("txt8").value;
+            var txt9=document.getElementById("txt9").value;
+            var txt10=document.getElementById("txt10").value;
+            var txt11=document.getElementById("txt11").value;
+            var txt12=document.getElementById("txt12").value;
+            var txt13=document.getElementById("txt13").value;
+            var txt14=document.getElementById("txt14").value;
+            var txt15=document.getElementById("txt15").value;
+            var txt16=document.getElementById("txt16").value;
+            var txt17=document.getElementById("txt17").value;
+            var txt18=document.getElementById("txt18").value;
+            var txt19=document.getElementById("txt19").value;
+            var txt20=document.getElementById("txt20").value;
+            var txt21=document.getElementById("txt21").value;
+            var txt22=document.getElementById("txt22").value;
+            var txt23=document.getElementById("txt23").value;
+            var txt24=document.getElementById("txt24").value;
+            var txt25=document.getElementById("txt25").value;
+            var txt26=document.getElementById("txt26").value;
+            var txt27=document.getElementById("txt27").value;
+            var txt28=document.getElementById("txt28").value;
+            var txt29=document.getElementById("txt29").value;
+            var txt30=document.getElementById("txt30").value;
+            var s1=document.getElementById("s1");
+            var s2=document.getElementById("s2");
+            var s3=document.getElementById("s3");
+            var s4=document.getElementById("s4");
+            var s5=document.getElementById("s5");
+            var s6=document.getElementById("s6");
+            var s7=document.getElementById("s7");
+            var s8=document.getElementById("s8");
+            var s9=document.getElementById("s9");
+            var s10=document.getElementById("s10");
+            var s11=document.getElementById("s11");
+            var s12=document.getElementById("s12");
+            var s13=document.getElementById("s13");
+            var s14=document.getElementById("s14");
+            var s15=document.getElementById("s15");
+            var s16=document.getElementById("s16");
+            var s17=document.getElementById("s17");
+            var s18=document.getElementById("s18");
+            var s19=document.getElementById("s19");
+            var s20=document.getElementById("s20");
+            var s21=document.getElementById("s21");
+            var s22=document.getElementById("s22");
+            var s23=document.getElementById("s23");
+            var s24=document.getElementById("s24");
+            var s25=document.getElementById("s25");
+            var s26=document.getElementById("s26");
+            var s27=document.getElementById("s27");
+            var s28=document.getElementById("s28");
+            var s29=document.getElementById("s29");
+            var s30=document.getElementById("s30");
+            s1.value=txt1;
+            s2.value=txt2;
+            s3.value=txt3;
+            s4.value=txt4;
+            s5.value=txt5;
+            s6.value=txt6;
+            s7.value=txt7;
+            s8.value=txt8;
+            s9.value=txt9;
+            s10.value=txt10;
+            s11.value=txt11;
+            s12.value=txt12;
+            s13.value=txt13;
+            s14.value=txt14;
+            s15.value=txt15;
+            s16.value=txt16;
+            s17.value=txt17;
+            s18.value=txt18;
+            s19.value=txt19;
+            s20.value=txt20;
+            s21.value=txt21;
+            s22.value=txt22;
+            s23.value=txt23;
+            s24.value=txt24;
+            s25.value=txt25;
+            s26.value=txt26;
+            s27.value=txt27;
+            s28.value=txt28;
+            s29.value=txt29;
+            s30.value=txt30;
+        }
+    </script>
+</body>
+</html>

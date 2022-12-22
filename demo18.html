@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr=new Array("HTML", "CSS", "JS", "JQUERY");
+        for (var x in arr)
+        {
+            document.write(arr[x]+" present at "+x+" index <br/>");
+        }
+        document.write("<br/>");
+        var i=0;
+        for (var value of arr)
+        {
+            document.write(value+" present at "+i+" index <br/>");
+            i++;
+        }
+    </script>
+</body>
+</html>

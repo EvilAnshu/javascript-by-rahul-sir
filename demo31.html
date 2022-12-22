@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    PINCODE <input onkeyup="demo()" type="number">
+    <b id="msg">message</b>
+    <script>
+        let demo=()=>
+        {
+            var t=document.querySelector("input");
+            var msg=document.querySelector("#msg");
+            if(t.value.length==6)
+            {
+                msg.style.color="green";
+                msg.value="valid";
+            }
+            else
+            {
+                msg.style.color="red";
+                msg.value="Invalid";
+            }
+        }
+    </script>
+</body>
+</html>

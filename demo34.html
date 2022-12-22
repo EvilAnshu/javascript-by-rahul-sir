@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span on></span>
+    <p></p>
+    <script>
+            let dd=document.querySelector("span");
+            let arr=["HTML","CSS","JS","JQUERY"];
+            let res="<select onchange='demo(this)'>"
+                arr.forEach((data)=>{
+                    res += "<option>"+data+"</option>";
+                })
+                res +="</select>"
+                dd.innerHTML=res;
+
+        let demo=(x)=>{
+            document.querySelector("p").innerText=x.value;
+        }
+    </script>
+</body>
+</html>

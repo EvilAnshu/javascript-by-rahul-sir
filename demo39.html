@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img width="512" height="512" src="off.png"/>
+    <input type="button" onclick="demo(this)" value="ON"/>
+    <script>
+        let demo=(x)=>
+        {
+            var im=document.querySelector("img")
+            if(x.value=="ON")
+            {
+                x.value="OFF"
+                im.setAttribute("src","ON.png")
+            }
+            else
+            {
+                x.value="ON"
+                im.setAttribute("src","off.png")
+            }
+        }
+    </script>
+</body>
+</html>
