@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        findIndex()
+        ------
+        findIndex function is used to return Index of first element of array that satisfying condition.
+        syntax:
+        -------
+        arr.findIndex((data)=>{
+            return condition
+        })
+        */
+       var arr=[9,21,34,344,54,65];
+       var a=arr.findIndex((data)=>{
+        return data%2==1 && data%7==0
+       })
+       document.write(a) //1
+    </script>
+</body>
+</html>
