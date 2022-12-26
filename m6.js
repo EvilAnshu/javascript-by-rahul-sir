@@ -9,5 +9,12 @@ function calc(...x)
     })
     return s
 }
+var company="TECHPILE";
+function demo1()
+{
+    console.log("i am from demo1 function precent in mod6");
+}
 
-export {name,age,calc}
+// in an module there can be only 1 default member 
+export {name,age,calc,demo1}
+export default company

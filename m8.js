@@ -20,3 +20,7 @@ var res = mod7.calc(10,20,30);
 console.log("Result of calc function present in mod7 : "+res);
 var res = mod6.calc(10,20,30);
 console.log("Result of calc function present in mod6 : "+res);
+
+console.log(mod6.default)
+
+mod6.demo1()
