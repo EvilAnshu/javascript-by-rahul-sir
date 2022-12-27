@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function demo()
+        {
+            var add = 40;
+            var sub = 40;
+            var multi = 40;
+            var power = 40;
+            var div = 40;
+            return [add, sub, multi, power, div]
+        }
+
+        var [a, s, m, p, d] = demo();
+        console.log(
+            `
+                Sum : ${a}
+                Sub : ${s}
+                Multi : ${m}
+                Power : ${p}
+                Division : ${d}
+            `
+        )
+    </script>
+</body>
+</html>
