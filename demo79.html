@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var studentInfo=[
+            {
+                name : "Ram",
+                age : 23,
+                branch : "cs",
+                city : "lucknow",
+                pic : "1.jpg"
+            },
+            {
+                name : "sumit",
+                age : 21,
+                branch : "cs",
+                city : "indore",
+                pic : "2.jpg"
+            },
+            {
+                name : "rohit",
+                age : 24,
+                branch : "cs",
+                city : "varanasi",
+                pic : "3.jpg"
+            }
+        ]
+        var res="<table border=1 cellspacing=0 cellpadding=5 >";
+        res += `<tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Branch</th>
+            <th>City</th>
+            <th>Picture</th>
+            </tr>`
+        studentInfo.forEach((data,index)=>{
+            res +=
+                `
+                    <tr>
+                    <td>${data.name}</td>
+                    <td>${data.age}</td>
+                    <td>${data.branch}</td>
+                    <td>${data.city}</td>
+                    <td><img src=${data.pic} alt="Path error" height="60px"/></td>
+                    </tr>
+                `
+        })
+        res +="</table>"
+        document.write(res)
+    </script>
+</body>
+</html>
