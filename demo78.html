@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var studentInfo=[
+            {
+                name : "Ram",
+                age : 23,
+                branch : "cs",
+                city : "lucknow"
+            },
+            {
+                name : "sumit",
+                age : 21,
+                branch : "cs",
+                city : "indore"
+            },
+            {
+                name : "rohit",
+                age : 24,
+                branch : "cs",
+                city : "varanasi"
+            }
+        ]
+        console.log(studentInfo[0].name);
+        console.log(studentInfo[1]["name"]);
+
+        studentInfo.forEach((data,index)=>{
+            console.log(
+                `
+                    Name : ${data.name}
+                    Age : ${data.age}
+                    Branch : ${data.branch}
+                    City : ${data.city}
+                `
+            )
+        })
+    </script>
+</body>
+</html>

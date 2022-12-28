@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function demo(x,y,z)
+        // {
+        //     return {name : x, age : y,salary : z}
+        // }
+        function demo(x,y,z)
+        {
+            this.name=x
+            this.age=y
+            this.salary=z
+        }
+
+        demo.prototype.Branch="cs"
+        var obj = new demo("ram",12,345600);
+        var obj2 = new demo("abc",32,34500);
+
+        console.log(obj.Branch);
+        console.log(obj2.Branch);
+        console.log(obj);
+        console.log(obj2);
+    </script>
+</body>
+</html>
